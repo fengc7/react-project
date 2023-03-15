@@ -18,7 +18,23 @@ header {
     flex-direction: row;
     .left {
         width: 200px;
-        background: #abac9c;
+        background: #ffa6a6;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        a {
+            width: 80%;
+            height: 30px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+        }
+        a:hover {
+            border-color: #54dd91;
+            color: rgb(10, 143, 196);
+        }
     }
     section {
         flex: 1;

@@ -2,7 +2,7 @@
  * @Author: fengc7 fengchen1202@126.com
  * @Date: 2023-03-07 15:37:50
  * @LastEditors: fengc7 fengchen1202@126.com
- * @LastEditTime: 2023-03-15 14:49:58
+ * @LastEditTime: 2023-03-15 16:32:36
  * @FilePath: /react-project/src/views/componentOne.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -36,10 +36,10 @@ class ComponentOne extends Component{
     render (){
         let {rights} = this.props
         return (
-            <div className='data'>
+            <div>
                
                 <h3 onClick={() => this.change() }>标题组件1</h3>
-                <div>
+                <div className='data'>
                     <li>
                         <span>name：</span>
                         <input className="input" type="text"  value={rights} placeholder='点击标题自加' readOnly/>
