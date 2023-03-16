@@ -2,7 +2,7 @@
  * @Author: fengc7 fengchen1202@126.com
  * @Date: 2023-03-15 16:53:40
  * @LastEditors: fengc7 fengchen1202@126.com
- * @LastEditTime: 2023-03-15 18:28:58
+ * @LastEditTime: 2023-03-16 16:28:06
  * @FilePath: /fengc/react-project/src/views/componentThree.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -25,15 +25,15 @@ class ComponentThree extends Component{
 
     }
     componentWillReceiveProps (nextProps) {
-        console.log(nextProps,'next')
+      
         let {rights} = nextProps
         this.setState({right:rights})
-        console.log(this.state)
+       
     }
     
     change() {
         let a = this.state.right +1;
-        console.log(a,'a')
+       
         this.props.funcRights(a);
     }
     render(){
@@ -48,7 +48,7 @@ class ComponentThree extends Component{
 
 // mapStateToProps : store 和组件props的关系。
 const mapStateToProps = (state) => {
-    console.log(state,'state')
+   
     return {
         rights: state.rightsActions.rights
     }

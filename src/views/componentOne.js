@@ -2,7 +2,7 @@
  * @Author: fengc7 fengchen1202@126.com
  * @Date: 2023-03-07 15:37:50
  * @LastEditors: fengc7 fengchen1202@126.com
- * @LastEditTime: 2023-03-15 18:03:14
+ * @LastEditTime: 2023-03-16 16:28:14
  * @FilePath: /react-project/src/views/componentOne.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -28,7 +28,7 @@ class ComponentOne extends Component{
         this.setState({right: rights})
     }
 
-    change (){
+    change (e){
         let a = this.state.right + 1
         this.props.funcRights(a)
     }
@@ -42,7 +42,7 @@ class ComponentOne extends Component{
                 <div className='data'>
                     <li>
                         <span>name：</span>
-                        <input className="input" type="text"  value={rights} placeholder='点击标题自加' readOnly/>
+                        <input type="text"  value={rights} placeholder='点击标题自加' readOnly />
                     </li>
                     <li>
                         <span>日期：</span>
@@ -59,7 +59,6 @@ class ComponentOne extends Component{
 }
 
 export default connect((state) =>{
-     console.log(state)
     return  {
         rights : state.rightsActions.rights
     }

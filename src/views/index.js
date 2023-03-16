@@ -2,7 +2,7 @@
  * @Author: fengc7 fengchen1202@126.com
  * @Date: 2023-03-06 16:58:56
  * @LastEditors: fengc7 fengchen1202@126.com
- * @LastEditTime: 2023-03-15 17:40:13
+ * @LastEditTime: 2023-03-16 16:27:31
  * @FilePath: /react-project/src/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -28,7 +28,6 @@ class routerDom extends React.Component{
     }
     render() {
         const store = configSore()
-        console.log(routeList,"routeList")
         return (
                 <Provider store={store}>
                 <Router>
