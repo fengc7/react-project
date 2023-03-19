@@ -2,7 +2,7 @@
  * @Author: fengc7 fengchen1202@126.com
  * @Date: 2023-03-16 13:33:21
  * @LastEditors: fengc7 fengchen1202@126.com
- * @LastEditTime: 2023-03-16 16:16:03
+ * @LastEditTime: 2023-03-17 20:53:29
  * @FilePath: /react-project/src/components/inputBox.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -26,6 +26,7 @@ class inputBox extends React.Component{
     }
 
     componentWillMount() {
+        // 显示父组件传输的数据
         this.setState({
             name:this.props.inputContent.name,
             item:this.props.inputContent.item
@@ -40,12 +41,15 @@ class inputBox extends React.Component{
     }
     render() {
         return (
+            // <>
             <div className="input-box">
                 <span>{this.state.name}</span>
                 {/* react中给input的value属性赋值，约束性属性，一次改变都要重新给自己赋值 */}
                 {/* defaultValue 原生Domd的value属性，react完全不管理输入过程 */}
                 <input type="text" defaultValue={this.state.item} onChange={this.sendValue}/>
             </div>
+            // {/* <button>提交</button>
+            // </> */}
         )
     }
 }

@@ -1,0 +1,19 @@
+.buttonBox {
+    font-size: 14px;
+    button {
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        background-color: #1989fa;
+        color: #fff;
+        border-radius: 5px;
+        padding: 0 20px;
+    }
+    .buttonDis {
+        opacity: 0.5;
+        cursor: not-allowed; //鼠标禁用标志
+    }
+}

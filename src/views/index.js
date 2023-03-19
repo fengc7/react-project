@@ -2,16 +2,13 @@
  * @Author: fengc7 fengchen1202@126.com
  * @Date: 2023-03-06 16:58:56
  * @LastEditors: fengc7 fengchen1202@126.com
- * @LastEditTime: 2023-03-16 16:27:31
+ * @LastEditTime: 2023-03-19 13:46:07
  * @FilePath: /react-project/src/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-// import ComponentOne from '../views/componentOne'
-// import ComponentTwo from '../views/componentTwo'
-// import ComponentThree from './componentThree'
 import routeList from '../router/router'
 
 import configSore from '../redux/configStore'
@@ -42,7 +39,10 @@ class routerDom extends React.Component{
                                 <Link to='/two'>组件二</Link>
                                 <br/>
                                 <Link to='/three'>组件三</Link>
-                                
+                                <br/>
+                                <Link to='/hooks'>hooks</Link>
+                                <br/>
+                                <Link to='/hooks2'>hooks2</Link>
                             </div>
                             <section>内容区
                                 <Routes>
