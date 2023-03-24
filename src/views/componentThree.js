@@ -2,7 +2,7 @@
  * @Author: fengc7 fengchen1202@126.com
  * @Date: 2023-03-15 16:53:40
  * @LastEditors: fengc7 fengchen1202@126.com
- * @LastEditTime: 2023-03-19 18:38:03
+ * @LastEditTime: 2023-03-21 10:26:50
  * @FilePath: /fengc/react-project/src/views/componentThree.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -52,6 +52,7 @@ class ComponentThree extends Component{
                 {/* img 直接引入图片可能会报错，需要import 来引入再使用 */}
 
                 <Button click={this.handleGet}></Button>
+                <div className="border-box"></div>
             </div>
         )
     }
